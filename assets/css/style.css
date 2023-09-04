@@ -377,29 +377,24 @@ height: 700px;
   padding-right : 44px;
   
 }
-.footersec1 ul::first-line{
-  font-size: 28px;
- 
-}
-.footersec1 ul li h4{
-  padding-bottom: 20px;
-}
+
+.footersec1 ul::first-line { font-size: 28px; }
+.footersec1 ul li h4 { padding-bottom: 20px; }
+
 .footersec1 ul li{
   width: 350px;
-  
   padding: 10px;
 }
-#border{
-  border-bottom: 1px solid black;
-}
-.footersec2 ul{
-display: flex;
-}
+
+#border { border-bottom: 1px solid black; }
+.footersec2 ul { display: flex; }
+
 .footersec2 p{
   position: absolute;
   top: 83%;
   left: 35%;
 }
+
 .wrapper{
   left: 63px;
 }
