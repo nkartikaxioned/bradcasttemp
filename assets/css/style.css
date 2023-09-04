@@ -134,7 +134,7 @@ sub { bottom: -.25em; }
 
 .cf:after { clear: both; }
 
-.cf { *zoom: 1; }
+/* .cf { *zoom: 1; } */
 
 /* 1.3. Font class declaration
    ========================================================================== */
@@ -154,4 +154,102 @@ sub { bottom: -.25em; }
   font-family: 'Futura Bold', 'Gill Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
+}
+nav{
+  display: flex;
+  padding-left:15px;
+  background: rgb(54, 54, 54);
+  height: 52px;
+ align-items: center;
+ 
+}
+nav ul{
+  display: none;
+}
+div nav h1 a{
+  text-decoration: none;
+  color: white;
+  margin-right: 5px;
+}
+div nav h1 span{
+  
+  color: white;
+}
+nav div p{
+padding-left: 1100px;
+color: white;
+}
+.sec1 img{
+position: relative;
+}
+.sec1 h2{
+  position: absolute;
+  top: 50%;
+  right: 40%;
+  font-size: 42px;
+}
+.div2{
+  position: absolute;
+  top: 60%;
+  text-align: center;
+  left: 32%;
+}
+.div2 p{
+  padding: 5px;
+}
+
+.button{
+  border: 2px solid;
+ 
+}
+.sec1 a{
+  padding: 15px;
+  border: 2px solid black;
+  color: black;
+  text-decoration: none;
+}
+
+.sec2{
+  background: grey;
+position: relative;
+height: 780px;
+}
+.sec2 h3{
+  position: absolute;
+ top: 15%;
+ left: 36%;
+ font-size: 36px;
+ color: white;
+}
+.sec2 ul{
+  display: flex;
+  
+}
+.sec2 p{
+  position: absolute;
+  top: 25%;
+  left: 36%;
+  color: rgb(185, 182, 182);
+font-size: 18px;
+}
+
+.image1{
+  position: absolute;
+  top: 36%;
+  left: 63px;
+}
+.image2{
+  position: absolute;
+  top: 36%;
+  right: 63px;
+}
+.image1 figcaption{
+  text-align: center;
+  padding: 30px 20px;
+  background: rgb(179, 178, 178);
+}
+.image2 figcaption{
+  text-align: center;
+  padding: 30px 20px;
+  background: rgb(179, 178, 178);
 }
