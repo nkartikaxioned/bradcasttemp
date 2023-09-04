@@ -207,6 +207,9 @@ position: relative;
   border: 2px solid black;
   color: black;
   text-decoration: none;
+  position: absolute;
+  right: 195px;
+  top: 80px;
 }
 
 .sec2{
@@ -252,4 +255,151 @@ font-size: 18px;
   text-align: center;
   padding: 30px 20px;
   background: rgb(179, 178, 178);
+}
+
+.sec3{
+  background: rgb(202, 200, 200);
+position: relative;
+height: 780px;
+}
+.sec3 h3{
+  position: absolute;
+  top: 106px;
+  left: 63px;
+  font-size: 36px;
+}
+.sec3 p{
+  position: absolute;
+  top: 175px;
+  left: 63px;
+  font-size: 22px;
+}
+.sec3 ul{
+  position: absolute;
+  top: 132px;
+  left: 20px;
+  
+}
+#list1{
+  position: absolute;
+  bottom: 80%;
+  left: 45px;
+ 
+}
+#list1 li{
+  
+  width: 90px;
+  padding: 10px;
+  list-style: none;
+  
+ 
+}
+#list2{
+  position: absolute;
+  top: 132px;
+  left: 943px;
+  list-style: none;
+}
+#list2 li{
+  padding: 10px;
+}
+#list3{
+  position: absolute;
+  top: 132px;
+ left: 586px;
+  list-style: none;
+  
+}
+#list3 li{
+  padding: 10px;
+  
+}
+#list4{
+  position: absolute;
+  top: 132px;
+ left: 233px;
+  list-style: none;
+  
+}
+#list4 li{
+  padding: 10px;
+}
+.sec4{
+  background: rgb(223, 114, 114);
+position: relative;
+height: 700px;
+}
+.sec4 h3{
+  position: absolute;
+  top: 102px;
+  font-size: 36px;
+  left: 63px;
+}
+
+.sec4 p{
+  position: absolute;
+  top: 176px;
+  left: 63px;
+  font-size: 22px;
+}
+.sec4 ul{
+  position: absolute;
+  top: 260px;
+  display: flex;
+  list-style: none;
+  left: 63px;
+  
+}
+
+.sec4 ul figure{
+  padding: 10px;
+}
+.sec4 ul figcaption{
+  text-align: center;
+  padding: 30px 10px;
+ width: 358px;
+ font-size: 18px;
+ background-color: gray;
+}
+
+.sec5{
+  position: relative;
+  height: 525px;
+}
+.footersec1{
+  display: flex;
+  position: absolute;
+  top: 103px;
+  left: 63px;
+}
+.footersec1 ul{
+  list-style: none;
+  padding-right : 44px;
+  
+}
+.footersec1 ul::first-line{
+  font-size: 28px;
+ 
+}
+.footersec1 ul li h4{
+  padding-bottom: 20px;
+}
+.footersec1 ul li{
+  width: 350px;
+  
+  padding: 10px;
+}
+#border{
+  border-bottom: 1px solid black;
+}
+.footersec2 ul{
+display: flex;
+}
+.footersec2 p{
+  position: absolute;
+  top: 83%;
+  left: 35%;
+}
+.wrapper{
+  left: 63px;
 }
