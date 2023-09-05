@@ -253,11 +253,12 @@ padding-bottom: 63px;
 .sec3 ul{
   list-style: none;
 }
-.list1{
- 
+.sec3d1{
+  display: flex;
 
- 
+  padding-bottom: 77px;
 }
+
 .list1 li{
   padding: 15px;
   
@@ -287,30 +288,32 @@ padding-bottom: 63px;
   padding: 10px;
 }
 /* section 3 styling end */
+/* section 4 styling start */
 .sec4{
-  background: rgb(223, 114, 114);
-position: relative;
-height: 700px;
+  background: #2A2D3A;
+
+  
+ text-align: center;
 }
 .sec4 h3{
-  position: absolute;
-  top: 102px;
+
+
   font-size: 36px;
-  left: 63px;
+  padding-top: 97px;
+  padding-bottom: 35px;
+ 
 }
 
 .sec4 p{
-  position: absolute;
-  top: 176px;
-  left: 63px;
+  
+ padding-bottom: 48px;
   font-size: 22px;
 }
 .sec4 ul{
-  position: absolute;
-  top: 260px;
+  justify-content: space-evenly;
   display: flex;
   list-style: none;
-  left: 63px;
+ padding-bottom: 70px;
   
 }
 
@@ -318,22 +321,20 @@ height: 700px;
   padding: 10px;
 }
 .sec4 ul figcaption{
-  text-align: center;
-  padding: 30px 10px;
- width: 358px;
+ 
  font-size: 18px;
- background-color: gray;
+ background-color: #293232;
 }
-
+/* section 4 styling end */
+/* section 5 styling start */
 .sec5{
-  position: relative;
-  height: 525px;
+
+ 
 }
 .footersec1{
   display: flex;
-  position: absolute;
-  top: 103px;
-  left: 63px;
+ 
+ 
 }
 .footersec1 ul{
   list-style: none;
@@ -345,7 +346,7 @@ height: 700px;
 .footersec1 ul li h4 { padding-bottom: 20px; }
 
 .footersec1 ul li{
-  width: 350px;
+
   padding: 10px;
 }
 
@@ -353,11 +354,10 @@ height: 700px;
 .footersec2 ul { display: flex; }
 
 .footersec2 p{
-  position: absolute;
-  top: 83%;
-  left: 35%;
+ 
+  
 }
 
 .wrapper{
-  left: 63px;
+  
 }
