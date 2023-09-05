@@ -331,14 +331,18 @@ padding-bottom: 63px;
 
  
 }
+.align{
+  display: flex;
+ justify-content: space-evenly;
+}
 .footersec1{
   display: flex;
- 
+  justify-content: center;
  
 }
 .footersec1 ul{
   list-style: none;
-  padding-right : 44px;
+
   
 }
 
@@ -350,9 +354,14 @@ padding-bottom: 63px;
   padding: 10px;
 }
 
-#border { border-bottom: 1px solid black; }
+.border { border-bottom: 1px solid black; }
 .footersec2 ul { display: flex; }
-
+.footersec2 ul li a::before {
+  content: "\f099";
+  font-family: "fontAwesome";
+  text-indent: 0;
+ }
+ 
 .footersec2 p{
  
   
