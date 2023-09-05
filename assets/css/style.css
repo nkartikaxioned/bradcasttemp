@@ -155,133 +155,113 @@ sub { bottom: -.25em; }
   font-style: normal;
   font-weight: bold;
 }
+/* navbar starts here */
 nav{
   display: flex;
-  padding-left:15px;
-  background: rgb(54, 54, 54);
-  height: 52px;
- align-items: center;
- 
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  width: 96%;
+  background: #101D35;
 }
-nav ul{
-  display: none;
-}
-div nav h1 a{
-  text-decoration: none;
-  color: white;
-  margin-right: 5px;
-}
-div nav h1 span{
-  
-  color: white;
-}
-nav div p{
-padding-left: 1100px;
-color: white;
-}
-.sec1 img{
-position: relative;
-}
-.sec1 h2{
-  position: absolute;
-  top: 50%;
-  right: 40%;
-  font-size: 42px;
-}
+nav ul{ display: none; }
+div nav h1 a{ text-decoration: none; }
+div nav h1 span{ padding-left: 5px; }
+
+/* navbar ends here */
+/* section 1 styeling start */
+
+.sec1{ width: 96%; }
+.sec1 figure{ width: 100%; }
+.sec1 img{ position: relative; }
+
+.sec1 h2{ font-size: 42px;}
+
 .div2{
   position: absolute;
-  top: 60%;
+  top: 50%;
+  left: 50%;
   text-align: center;
-  left: 32%;
+  transform: translate(-50% ,-50%);
 }
 .div2 p{
   padding: 5px;
+  
 }
 
-.button{
-  border: 2px solid;
- 
-}
 .sec1 a{
   padding: 15px;
+  
   border: 2px solid black;
-  color: black;
   text-decoration: none;
-  position: absolute;
-  right: 195px;
-  top: 80px;
 }
+/* section 1 styeling end */
+/* section 2 styeling start */
 
 .sec2{
-  background: grey;
-position: relative;
-height: 780px;
+  background:#112634;
+  width: 100%;
+  justify-content: space-between;
+  text-align: center;
 }
+
 .sec2 h3{
-  position: absolute;
- top: 15%;
- left: 36%;
+ padding-top: 101px;
+ padding-bottom: 22px;
  font-size: 36px;
  color: white;
 }
+
 .sec2 ul{
   display: flex;
-  
-}
-.sec2 p{
-  position: absolute;
-  top: 25%;
-  left: 36%;
-  color: rgb(185, 182, 182);
-font-size: 18px;
+  list-style: none;
+  justify-content: space-between;
+  padding-bottom: 108px;
 }
 
-.image1{
-  position: absolute;
-  top: 36%;
-  left: 63px;
+.sec2 p{
+  color: rgb(185, 182, 182);
+font-size: 18px;
+padding-bottom: 63px;
 }
-.image2{
-  position: absolute;
-  top: 36%;
-  right: 63px;
-}
+
 .image1 figcaption{
   text-align: center;
   padding: 30px 20px;
-  background: rgb(179, 178, 178);
+  background: #1F2D39;
 }
+
 .image2 figcaption{
   text-align: center;
   padding: 30px 20px;
-  background: rgb(179, 178, 178);
+  background: #1F2D39;
 }
 
+/* section 2 styeling end */
+/* section 3 styeling start */
 .sec3{
-  background: rgb(202, 200, 200);
-position: relative;
-height: 780px;
+  background: #273141;
+
+
 }
 .sec3 h3{
-  position: absolute;
-  top: 106px;
-  left: 63px;
+
+  padding-top: 90px;
+  padding-bottom: 32px;
   font-size: 36px;
 }
 .sec3 p{
-  position: absolute;
-  top: 175px;
-  left: 63px;
+  
   font-size: 22px;
 }
 .sec3 ul{
-  position: absolute;
+ 
   top: 132px;
   left: 20px;
   
 }
 #list1{
-  position: absolute;
+ 
   bottom: 80%;
   left: 45px;
  
@@ -303,27 +283,7 @@ height: 780px;
 #list2 li{
   padding: 10px;
 }
-#list3{
-  position: absolute;
-  top: 132px;
- left: 586px;
-  list-style: none;
-  
-}
-#list3 li{
-  padding: 10px;
-  
-}
-#list4{
-  position: absolute;
-  top: 132px;
- left: 233px;
-  list-style: none;
-  
-}
-#list4 li{
-  padding: 10px;
-}
+
 .sec4{
   background: rgb(223, 114, 114);
 position: relative;
