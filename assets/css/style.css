@@ -169,7 +169,15 @@ nav{
   /* width: 96%; */
   background: #101D35;
 }
+nav p ::before{
+  text-decoration: none;
+  font-family: "fontAwesome";
+  text-indent: 0;
+  font-size: 2em;
+  color: #ffffff;
 
+ content: "\f0c9";
+}
 nav ul{ display: none; }
 div nav h1 a{ text-decoration: none; }
 div nav h1 span{ padding-left: 5px; }
@@ -178,10 +186,17 @@ div nav h1 span{ padding-left: 5px; }
 /* section 1 styling start */
 
 /* .sec1{ width: 100%; } */
-.wrapper11 figure{ width: 100%; }
+.wrappersection1{
+  max-width: 1366px;
+  width: 100%; 
+  margin: 0 auto;
+
+}
+.sec1 figure{ width: 100%; }
 .sec1 img{ position: relative; }
 
-.sec1 h2{ font-size: 42px;}
+.sec1 h2{ font-size: 42px;
+padding-bottom: 30px;}
 
 .div2{
   position: absolute;
@@ -194,6 +209,7 @@ div nav h1 span{ padding-left: 5px; }
 .div2 p{padding: 5px;}
 
 .sec1 a{
+
   padding: 15px;
   border: 2px solid black;
   text-decoration: none;
@@ -260,7 +276,7 @@ padding-bottom: 63px;
   display: flex;
   padding-bottom: 77px;
 }
-
+.list1{width: 20%;}
 .list1 li{ padding: 15px;}
 
 .list1 li a{
@@ -285,6 +301,7 @@ padding-bottom: 63px;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  justify-content: end;
 }
 
 .list2 li{ padding: 10px;}
@@ -317,6 +334,7 @@ padding-bottom: 63px;
 .sec4 ul figcaption{
  font-size: 18px;
  background-color: #293232;
+ padding: 20px;
 }
 /* section 4 styling end */
 /* section 5 styling start */
@@ -329,16 +347,15 @@ footer{ background: #020B13;}
  padding-top: 60px;
 }
 
-.footersec1{
- 
-  justify-content: center;
-}
+.footersec1{ justify-content: center;}
 
 .footersec1 ul{ list-style: none; width: 20%;}
 .footersec1 ul::first-line { font-size: 28px; }
 .footersec1 ul li h4 { padding-bottom: 20px; }
 .footersec1 ul li{ padding: 10px;}
 .border { border-bottom: 1px solid black; }
+
+.align li a{ text-decoration: none;}
 
 .footersec2 ul { 
   display: flex;
