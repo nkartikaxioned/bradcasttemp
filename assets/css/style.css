@@ -169,7 +169,7 @@ nav{
   /* width: 96%; */
   background: #101D35;
 }
-nav p ::before{
+nav p::before{
   text-decoration: none;
   font-family: "fontAwesome";
   text-indent: 0;
@@ -236,6 +236,10 @@ padding-bottom: 30px;}
   list-style: none;
   justify-content: space-between;
   padding-bottom: 108px;
+}
+
+.sec2 li {
+  width: 40%;
 }
 
 .sec2 p{
@@ -353,7 +357,11 @@ footer{ background: #020B13;}
 .footersec1 ul::first-line { font-size: 28px; }
 .footersec1 ul li h4 { padding-bottom: 20px; }
 .footersec1 ul li{ padding: 10px;}
-.border { border-bottom: 1px solid black; }
+
+.footersec1 ul li:not(:first-child, :last-child) {
+  border-bottom: 1px solid black;
+}
+
 
 .align li a{ text-decoration: none;}
 
