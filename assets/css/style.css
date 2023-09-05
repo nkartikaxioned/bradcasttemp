@@ -169,7 +169,7 @@ div nav h1 a{ text-decoration: none; }
 div nav h1 span{ padding-left: 5px; }
 
 /* navbar ends here */
-/* section 1 styeling start */
+/* section 1 styling start */
 
 .sec1{ width: 96%; }
 .sec1 figure{ width: 100%; }
@@ -195,8 +195,8 @@ div nav h1 span{ padding-left: 5px; }
   border: 2px solid black;
   text-decoration: none;
 }
-/* section 1 styeling end */
-/* section 2 styeling start */
+/* section 1 styling end */
+/* section 2 styling start */
 
 .sec2{
   background:#112634;
@@ -237,8 +237,8 @@ padding-bottom: 63px;
   background: #1F2D39;
 }
 
-/* section 2 styeling end */
-/* section 3 styeling start */
+/* section 2 styling end */
+/* section 3 styling start */
 .sec3{ background: #273141; }
 
 .sec3 h3{
@@ -251,7 +251,7 @@ padding-bottom: 63px;
   font-size: 22px;
 }
 .sec3 ul{
- 
+  list-style: none;
 }
 .list1{
  
@@ -259,11 +259,24 @@ padding-bottom: 63px;
  
 }
 .list1 li{
-  padding: 10px;
-  list-style: none;
+  padding: 15px;
+  
 }
 .list1 li a{
-  border: 1px solid ;
+  border: 1px solid transparent;
+  padding: 10px;
+  color: #ffffff;
+  background-color: #29383F;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.list1 li a:hover{
+  border: 1px solid transparent;
+  padding: 10px;
+  color: #ffffff;
+  background-color: #AA14CC;
+  border-radius: 5px;
+  text-decoration: none;
 }
 .list2{
   display: flex;
@@ -273,7 +286,7 @@ padding-bottom: 63px;
 .list2 li{
   padding: 10px;
 }
-
+/* section 3 styling end */
 .sec4{
   background: rgb(223, 114, 114);
 position: relative;
