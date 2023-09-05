@@ -239,48 +239,38 @@ padding-bottom: 63px;
 
 /* section 2 styeling end */
 /* section 3 styeling start */
-.sec3{
-  background: #273141;
+.sec3{ background: #273141; }
 
-
-}
 .sec3 h3{
-
   padding-top: 90px;
   padding-bottom: 32px;
   font-size: 36px;
 }
 .sec3 p{
-  
+  padding-bottom: 47px;
   font-size: 22px;
 }
 .sec3 ul{
  
-  top: 132px;
-  left: 20px;
-  
 }
-#list1{
+.list1{
  
-  bottom: 80%;
-  left: 45px;
+
  
 }
-#list1 li{
-  
-  width: 90px;
+.list1 li{
   padding: 10px;
   list-style: none;
-  
- 
 }
-#list2{
-  position: absolute;
-  top: 132px;
-  left: 943px;
+.list1 li a{
+  border: 1px solid ;
+}
+.list2{
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
 }
-#list2 li{
+.list2 li{
   padding: 10px;
 }
 
