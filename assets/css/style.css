@@ -62,13 +62,87 @@
    v2.0 | 20110126
    License: none (public domain)
    ========================================================================== */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
-blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
-ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
-figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -78,17 +152,30 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
 /* Force scrollbar */
-html { overflow-y: scroll; }
+html {
+  overflow-y: scroll;
+}
 
 /* Align radios and text inputs with their label */
 
-input[type='radio'] { vertical-align: text-bottom; }
+input[type='radio'] {
+  vertical-align: text-bottom;
+}
 
 /* Hand cursor on clickable input elements */
 label,
@@ -104,7 +191,9 @@ strong {
   font-size: inherit;
 }
 
-em { font-style: italic; }
+em {
+  font-style: italic;
+}
 
 img {
   border: 0;
@@ -119,9 +208,13 @@ sup {
   line-height: 0;
 }
 
-sup { top: -.7em; }
+sup {
+  top: -.7em;
+}
 
-sub { bottom: -.25em; }
+sub {
+  bottom: -.25em;
+}
 
 /* 1.2. Clear Fix
    ========================================================================== */
@@ -132,7 +225,9 @@ sub { bottom: -.25em; }
   content: " ";
 }
 
-.cf:after { clear: both; }
+.cf:after {
+  clear: both;
+}
 
 /* .cf { *zoom: 1; } */
 
@@ -150,126 +245,183 @@ sub { bottom: -.25em; }
  * followed throughout the site, then menstion the font property in body. No need
  * of creating an extra class for it) */
 
- /* common classes start */
+/* common classes start */
+
 .futura-bold-font {
   font-family: 'Futura Bold', 'Gill Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
 }
 
-/* .wrapper {
-  max-width: 1366px;
-  width: 90.77%; 
-  margin: 0 auto;
-} */
-.fontcolor{
+.fontcolor {
   color: #ffffff;
 }
-.fontcolorgrey{
+
+.fontcolorgrey {
   color: #737C82;
 }
+
 /* common classes end */
 /* navbar starts here */
-header .wrapper{ width: 100%;}
-.wrapper h1 a{text-decoration: none;} 
 
-nav{
+header .wrapper {
+  width: 100%;
+  display: flex;
+  background: #101D35;
+  justify-content: space-between;
+}
+
+.wrapper h1 a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.wrapper h1 {
+  background-color: #101D35;
+  padding: 10px;
+}
+
+.wrapper h1 a:hover {
+  color: #f4a460;
+}
+
+nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  /* width: 96%; */
+  padding: 10px;
   background: #101D35;
 }
-nav div:hover{
-color: #f4a460;
-cursor: pointer;
+
+nav div:hover {
+  color: #f4a460;
+  cursor: pointer;
 }
-nav div::before{
+
+nav div::before {
   text-decoration: none;
   font-family: "fontAwesome";
   text-indent: 0;
   font-size: 0.8em;
   color: #ffffff;
-
- content: "\f0c9";
+  content: "\f0c9";
 }
-nav ul{ display: none; }
-div nav h1 a{ text-decoration: none; }
-div nav h1 span{ padding-left: 5px; }
+
+nav ul {
+  display: none;
+}
+
+div nav p a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+div nav p a:hover {
+  text-decoration: none;
+  font-size: 20px;
+  color: #f4a460;
+}
+
+h1::first-letter {
+  text-transform: capitalize;
+}
+
+nav div {
+  text-transform: capitalize;
+}
+
+div nav p span {
+  padding-left: 5px;
+}
 
 /* navbar ends here */
 /* section 1 styling start */
 
-/* .sec1{ width: 100%; } */
-
-.sec1 .wrapper{
- 
-  width: 100%; 
+.sec1 .wrapper {
+  width: 100%;
   margin: 0 auto;
-
 }
-.sec1 figure{ width: 100%; }
-.sec1 img{ position: relative; 
-width: 100%;}
 
-.sec1 h2{ font-size: 42px;
-padding-bottom: 20px;}
+.sec1 figure {
+  width: 100%;
+}
 
-.sec1 .button{ padding-top: 40px;}
+.sec1 img {
+  position: relative;
+  width: 100%;
+}
 
-.div2{
+.sec1 h2 {
+  font-size: 42px;
+  padding-bottom: 20px;
+}
+
+.sec1 .button {
+  padding-top: 40px;
+}
+
+.div2 {
   position: absolute;
   top: 50%;
   left: 50%;
   text-align: center;
-  transform: translate(-50% ,-50%);
+  transform: translate(-50%, -50%);
 }
 
-.div2 p{padding: 5px;}
+.div2 p {
+  padding: 5px;
+}
 
-.sec1 a{
+.div2 p::first-letter {
+  text-transform: capitalize;
+}
 
+.sec1 a {
   padding: 15px;
   border: 2px solid #ffffff;
   color: #ffffff;
   text-decoration: none;
 }
-.sec1 a:hover{
 
+.sec1 a:hover {
   padding: 15px;
   border: 2px solid #ffffff;
   color: #f4a460;
   text-decoration: none;
-  font-size: 1.2em;
+
 }
+
 /* section 1 styling end */
 /* section 2 styling start */
-.sec2 .wrapper{
+
+.sec2 .wrapper {
   max-width: 1240px;
   width: 90.77%;
   margin: auto;
 }
-.sec2 .wrapper img{
+
+.sec2 .wrapper img {
   width: 100%;
 }
-.wrapper figure{
+
+.sec2 .wrapper figure {
   width: 100%;
   margin: 0 auto;
 }
-.sec2{
-  background:#112634;
+
+.sec2 {
+  background: #112634;
   text-align: center;
 }
 
-.sec2 h3{
- padding-top: 101px;
- padding-bottom: 22px;
- font-size: 36px;
- color: white;
+.sec2 h3 {
+  padding-top: 101px;
+  padding-bottom: 22px;
+  font-size: 36px;
+  color: white;
 }
 
-.sec2 ul{
+.sec2 ul {
   display: flex;
   list-style: none;
   justify-content: space-between;
@@ -277,22 +429,22 @@ padding-bottom: 20px;}
 }
 
 .sec2 li {
-  width: 40%;
+  width: 48%;
 }
 
-.sec2 p{
+.sec2 p {
   color: rgb(185, 182, 182);
-font-size: 18px;
-padding-bottom: 63px;
+  font-size: 18px;
+  padding-bottom: 63px;
 }
 
-.image1 figcaption{
+.image1 figcaption {
   text-align: center;
   padding: 30px 20px;
   background: #1F2D39;
 }
 
-.image2 figcaption{
+.image2 figcaption {
   text-align: center;
   padding: 30px 20px;
   background: #1F2D39;
@@ -300,127 +452,195 @@ padding-bottom: 63px;
 
 /* section 2 styling end */
 /* section 3 styling start */
-.sec3 .wrapper{
+
+.sec3 .wrapper {
   width: 90.77%;
   max-width: 1240px;
   margin: 0 auto;
 }
-.sec3{ background: #273141; }
 
-.sec3 h3{
+.sec3 {
+  background: #273141;
+}
+
+.sec3 h3 {
   padding-top: 90px;
   padding-bottom: 32px;
   font-size: 36px;
 }
-.sec3 p{
+
+.sec3 p {
   padding-bottom: 47px;
   font-size: 22px;
 }
-.sec3 ul{ list-style: none;}
 
-.sec3d1{
+.sec3 ul {
+  list-style: none;
+}
+
+.sec3d1 {
   display: flex;
   padding-bottom: 77px;
+  width: 100%;
 }
-.list1{width: 30%;}
-.list1 li{ padding: 15px;}
 
-.list1 li a{
+.list1 {
+  width: 48%;
+}
+
+.list1 li {
+  padding: 15px 0px 0px 15px;
+  width: 80%;
+}
+
+.list1 li a {
   border: 1px solid transparent;
   padding: 10px;
   color: #ffffff;
   background-color: #29383F;
   border-radius: 5px;
   text-decoration: none;
+  display: block;
+  text-align: center;
 }
 
-.list1 li a:hover{
-  border: 1px solid transparent;
-  padding: 10px;
-  color: #ffffff;
+.list1 li a:hover {
   background-color: #AA14CC;
-  border-radius: 5px;
-  text-decoration: none;
+}
+
+.list2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   
 }
 
-.list2{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+.list2 img {
+  border-radius: 5px;
+  padding-bottom: 15px;
+  
 }
 
-.list2 li{ padding: 10px;}
+/* .list2 li{ padding: 10px;}
+.list2 li img{padding-bottom: 9%;} */
 
 /* section 3 styling end */
 /* section 4 styling start */
-.sec4 .wrapper{
+
+.sec4 .wrapper {
   width: 90.77%;
   max-width: 1240px;
   margin: 0 auto;
 }
-.sec4{
+
+.sec4 {
   background: #2A2D3A;
- text-align: center;
+  text-align: center;
 
 }
 
-.sec4 h3{
+.sec4 h3 {
   font-size: 36px;
   padding-top: 97px;
   padding-bottom: 35px;
 }
 
-.sec4 p{
- padding-bottom: 48px;
+.sec4 p {
+  padding-bottom: 48px;
   font-size: 22px;
 }
-.sec4 ul{
-  justify-content: space-evenly;
+
+.sec4 ul {
+  width: 100%;
   display: flex;
   list-style: none;
- padding-bottom: 70px;
+  padding-bottom: 70px;
 }
 
-.sec4 ul figure{ padding: 10px; width: 90%;}
-.sec4 figure img{width: 100%;}
-.sec4 ul figcaption{
- font-size: 18px;
- background-color: #293232;
- padding: 20px;
+.sec4 ul li {
+  width: 34%;
 }
+
+.sec4 ul figure {
+  margin: auto;
+  width: 90%;
+}
+
+.sec4 figure img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.sec4 ul figcaption {
+  font-size: 18px;
+  background-color: #293232;
+  padding: 20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
 /* section 4 styling end */
 /* section 5 styling start */
 
-footer{ background: #020B13;}
+footer {
+  background: #020B13;
+}
 
-.align{
+.align {
   display: flex;
- justify-content: space-evenly;
- padding-top: 60px;
+  justify-content: space-evenly;
+  padding-top: 60px;
 }
-.footersec1 .wrapper{
+
+.footersec1 .wrapper {
   max-width: 1240px;
   width: 90.77%;
   margin: auto;
 }
-.footersec1{ justify-content: center;}
 
-.footersec1 ul{ list-style: none; width: 30%;}
-.footersec1 ul::first-line { font-size: 28px; }
-.footersec1 ul li h4 { padding-bottom: 20px; }
-.footersec1 ul li{ margin: 15px;width: 100%; padding: 1px 0px;}
-.footersec1 li a:hover{ color: #f4a460;}
-.footersec1 ul li:not(:first-child, :last-child) { border-bottom: 1px solid #ffffff;}
+.footersec1 {
+  justify-content: center;
+}
 
+.footersec1 ul {
+  list-style: none;
+  width: 32%;
+}
 
-.align li a{ text-decoration: none;}
-.footersec2 .wrapper{
+.footersec1 ul::first-line {
+  font-size: 28px;
+}
+
+.footersec1 ul li h4 {
+  padding-bottom: 20px;
+}
+
+.footersec1 ul li {
+  margin: 15px;
+  width: 100%;
+  padding: 1px 0px;
+}
+
+.footersec1 li a:hover {
+  color: #f4a460;
+}
+
+.footersec1 ul li:not(:first-child, :last-child) {
+  border-bottom: 1px solid #ffffff;
+}
+
+.align li a {
+  text-decoration: none;
+}
+
+.footersec2 .wrapper {
   max-width: 1240px;
   width: 90.77%;
   margin: auto;
 }
-.footersec2 ul { 
+
+.footersec2 ul {
   display: flex;
   justify-content: center;
   list-style: none;
@@ -429,24 +649,47 @@ footer{ background: #020B13;}
   padding-bottom: 10px;
 }
 
-.footersec2 ul a{ 
+.footersec2 ul a {
   text-decoration: none;
   font-family: "fontAwesome";
-  text-indent: 0;
+  text-indent: -9999px;
+  float: right;
   font-size: 2em;
   color: #ffffff;
- padding: 10px;
+  padding: 10px;
 }
-.footersec2 p{
+
+.footersec2 ul a::before {
+  text-indent: 0;
+  float: right;
+}
+
+.footersec2 ul a:hover {
+  color: #f4a460;
+}
+
+.footersec2 p {
   text-align: center;
   padding-bottom: 70px;
 }
-.li1 a::before { content: "\f099"; }
- .li2 a::before { content: "\f09a"; } 
- .li3 a::before { content: "\f16d"; }
- .li4 a::before { content: "\f2ab"; }
 
-.wrapper2{
+.li1 a::before {
+  content: "\f099";
+}
+
+.li2 a::before {
+  content: "\f09a";
+}
+
+.li3 a::before {
+  content: "\f16d";
+}
+
+.li4 a::before {
+  content: "\f2ab";
+}
+
+.wrapper2 {
   text-align: center;
   padding-bottom: 30px;
 }
