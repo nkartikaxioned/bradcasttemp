@@ -170,10 +170,9 @@ sub { bottom: -.25em; }
 }
 /* common classes end */
 /* navbar starts here */
-header .wrapper{
-  width: 100%;
- 
-}
+header .wrapper{ width: 100%;}
+.wrapper h1 a{text-decoration: none;} 
+
 nav{
   display: flex;
   align-items: center;
@@ -182,11 +181,15 @@ nav{
   /* width: 96%; */
   background: #101D35;
 }
-nav p::before{
+nav div:hover{
+color: #f4a460;
+cursor: pointer;
+}
+nav div::before{
   text-decoration: none;
   font-family: "fontAwesome";
   text-indent: 0;
-  font-size: 2em;
+  font-size: 0.8em;
   color: #ffffff;
 
  content: "\f0c9";
@@ -228,8 +231,17 @@ padding-bottom: 20px;}
 .sec1 a{
 
   padding: 15px;
-  border: 2px solid black;
+  border: 2px solid #ffffff;
+  color: #ffffff;
   text-decoration: none;
+}
+.sec1 a:hover{
+
+  padding: 15px;
+  border: 2px solid #ffffff;
+  color: #f4a460;
+  text-decoration: none;
+  font-size: 1.2em;
 }
 /* section 1 styling end */
 /* section 2 styling start */
@@ -370,7 +382,7 @@ padding-bottom: 63px;
  padding-bottom: 70px;
 }
 
-.sec4 ul figure{ padding: 10px; width: 100%;}
+.sec4 ul figure{ padding: 10px; width: 90%;}
 .sec4 figure img{width: 100%;}
 .sec4 ul figcaption{
  font-size: 18px;
@@ -397,11 +409,9 @@ footer{ background: #020B13;}
 .footersec1 ul{ list-style: none; width: 30%;}
 .footersec1 ul::first-line { font-size: 28px; }
 .footersec1 ul li h4 { padding-bottom: 20px; }
-.footersec1 ul li{ margin: 10px;width: 100%;}
-
-.footersec1 ul li:not(:first-child, :last-child) {
-  border-bottom: 1px solid black;
-}
+.footersec1 ul li{ margin: 15px;width: 100%; padding: 1px 0px;}
+.footersec1 li a:hover{ color: #f4a460;}
+.footersec1 ul li:not(:first-child, :last-child) { border-bottom: 1px solid #ffffff;}
 
 
 .align li a{ text-decoration: none;}
@@ -429,6 +439,7 @@ footer{ background: #020B13;}
 }
 .footersec2 p{
   text-align: center;
+  padding-bottom: 70px;
 }
 .li1 a::before { content: "\f099"; }
  .li2 a::before { content: "\f09a"; } 
