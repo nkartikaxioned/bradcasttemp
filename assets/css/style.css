@@ -156,11 +156,12 @@ sub { bottom: -.25em; }
   font-style: normal;
   font-weight: bold;
 }
-.wrapper11 {
+
+/* .wrapper {
   max-width: 1366px;
   width: 90.77%; 
   margin: 0 auto;
-}
+} */
 .fontcolor{
   color: #ffffff;
 }
@@ -169,7 +170,10 @@ sub { bottom: -.25em; }
 }
 /* common classes end */
 /* navbar starts here */
-
+header .wrapper{
+  width: 100%;
+  
+}
 nav{
   display: flex;
   align-items: center;
@@ -195,8 +199,9 @@ div nav h1 span{ padding-left: 5px; }
 /* section 1 styling start */
 
 /* .sec1{ width: 100%; } */
-.wrappersection1{
-  max-width: 1240px;
+
+.sec1 .wrapper{
+ 
   width: 100%; 
   margin: 0 auto;
 
@@ -226,14 +231,23 @@ padding-bottom: 30px;}
 }
 /* section 1 styling end */
 /* section 2 styling start */
-
+.sec2 .wrapper{
+  max-width: 1366;
+  width: 90.77%;
+}
+.wrapper figure img{
+  width: 100%;
+}
+.wrapper figure{
+  width: 100%;
+}
 .sec2{
   background:#112634;
-  width: 100%;
-  justify-content: space-between;
   text-align: center;
 }
-
+.sec2 .button{
+  margin-top: 20px;
+}
 .sec2 h3{
  padding-top: 101px;
  padding-bottom: 22px;
