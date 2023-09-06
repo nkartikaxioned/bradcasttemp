@@ -402,11 +402,13 @@ div nav p span {
 
 .sec2 .wrapper img {
   width: 100%;
+  border-radius: 3px 3px 0px 0px;
 }
 
 .sec2 .wrapper figure {
   width: 100%;
   margin: 0 auto;
+ 
 }
 
 .sec2 {
@@ -438,16 +440,11 @@ div nav p span {
   padding-bottom: 63px;
 }
 
-.image1 figcaption {
+ul li figcaption {
   text-align: center;
   padding: 30px 20px;
   background: #1F2D39;
-}
-
-.image2 figcaption {
-  text-align: center;
-  padding: 30px 20px;
-  background: #1F2D39;
+  border-radius: 3px 3px 3px 3px;
 }
 
 /* section 2 styling end */
@@ -689,9 +686,5 @@ footer {
   content: "\f2ab";
 }
 
-.wrapper2 {
-  text-align: center;
-  padding-bottom: 30px;
-}
 
 /* footer section end */
